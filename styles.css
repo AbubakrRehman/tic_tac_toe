@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.game-container {
+    display: flex;
+    width: 40%;
+    /* border: 2px solid red; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.square {
+    width: 32%;
+    height: 150px;
+    border: 2px solid black;
+    margin-bottom: 3px;
+}
+
+.square:hover {
+    border: 3px solid red;
+    cursor: pointer;
+
+}
+
+.square:nth-child(1),
+.square:nth-child(3),
+.square:nth-child(5),
+.square:nth-child(7),
+.square:nth-child(9) {
+    background-color: rgb(173, 241, 172);
+}
+
+.square:nth-child(2),
+.square:nth-child(4),
+.square:nth-child(6),
+.square:nth-child(8) {
+    background-color: rgb(30, 153, 28);
+}
+
+.reset {
+    margin-top: 5px;
+    width: 150px;
+    border: none;
+    outline: none;
+    height: 50px;
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.reset:hover {
+    background-color: rgb(173, 241, 172);
+}
+
+.squareWithX::before {
+    font-size: 100px;
+    content: "X";
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.squareWithO::before {
+    font-size: 100px;
+    content: "O";
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.result {
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 700;
+}
